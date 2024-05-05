@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Лаба 6</string>
+    <string name="nameText">FileDownload</string>
+    <string name="editIDforDownload">ID журнала</string>
+    <string name="butDownloadText">Скачать</string>
+    <string name="butSeeText">Смотреть</string>
+    <string name="butDeleteText">Удалить</string>
+    <string name="butPoput">+</string>
+
+</resources>
