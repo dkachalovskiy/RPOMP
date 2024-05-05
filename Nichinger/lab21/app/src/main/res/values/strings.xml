@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">lab21</string>
+
+    <string name="tab_1">Move detection</string>
+    <string name="tab_2">GPS</string>
+    <string name="tab_3">Satellites</string>
+    <string name="tab_4">Info</string>
+    <string name="tab_4_text">Additional info</string>
+    <string name="accelerometer_text">Shake detection</string>
+    <string name="gps_text">GPS</string>
+    <string name="gps_text2">My position</string>
+    <string name="gps_text3">Satellites</string>
+</resources>
