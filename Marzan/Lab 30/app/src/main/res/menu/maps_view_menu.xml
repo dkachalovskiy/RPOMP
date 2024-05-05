@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/mapNone"
+        android:title="NoneKuharev"/>
+    <item
+        android:id="@+id/mapNormal"
+        android:title="NormalKuharev"/>
+    <item
+        android:id="@+id/mapSatellite"
+        android:title="SatelliteKuharev0_0"/>
+    <item
+        android:id="@+id/mapHybrid"
+        android:title="HybridKuharev[]_[]"/>
+    <item
+        android:id="@+id/mapTerrain"
+        android:title="TerrainKuharev"/>
+</menu>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/button1"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:rotationX="4"
+            android:text="Accelerometer (нажимает Кухарев)"
+            android:textSize="9sp" />
+
+        <Button
+            android:id="@+id/button2"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="GPS (тоже Кухарев)"
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/button3"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Other (снова Кухарев)"
+            android:textSize="10sp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/button4"
+            style="@android:style/Widget.Material.Light.Button.Toggle"
+            android:layout_width="wrap_content"
+            android:layout_height="34dp"
+            android:text="Show history (Кухареву)"
+            android:textSize="8sp" />
+
+        <Button
+            android:id="@+id/button5"
+            style="@android:style/Widget.Material.Light.Button.Toggle"
+            android:layout_width="wrap_content"
+            android:layout_height="34dp"
+            android:text="Satellites info"
+            android:textSize="8sp" />
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/button6"
+            style="@android:style/Widget.Material.Light.Button.Toggle"
+            android:layout_width="wrap_content"
+            android:layout_height="34dp"
+            android:text="Change provider"
+            android:textSize="8sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Hello World by Dzmitry Kukharau from PO-9!" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/googlesatellite" />
+
+</LinearLayout>
