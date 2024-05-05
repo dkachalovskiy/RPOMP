@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editMessageForSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="64dp"
+        android:ems="10"
+         android:hint="Введите запрос (Тупик)"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/butSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="60dp"
+        android:onClick="GetSearchText"
+        android:text="Поиск"
+        app:layout_constraintStart_toEndOf="@+id/editMessageForSearch"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewDefaultDog"
+        android:layout_width="324dp"
+        android:layout_height="436dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editMessageForSearch"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageButton
+        android:id="@+id/buttonInternet"
+        android:layout_width="54dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="168dp"
+        android:background="#FFFFFF"
+        android:onClick="clickInternet"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonDownload"
+        app:srcCompat="@drawable/free_icon_internet_1450332" />
+
+    <Button
+        android:id="@+id/buttonDislike"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="168dp"
+        android:onClick="clickDisLike"
+        android:text="👎"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonInternet"
+        app:layout_constraintHorizontal_bias="0.759"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonLike"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="168dp"
+        android:onClick="clickLike"
+        android:text="👍 (Тупик)"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/buttonNext"
+        android:layout_width="136dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="24dp"
+        android:onClick="clickNext"
+        android:text="Следующее"
+        app:layout_constraintEnd_toEndOf="@+id/buttonLike"
+        app:layout_constraintTop_toBottomOf="@+id/buttonLike" />
+
+    <Button
+        android:id="@+id/buttonBack"
+        android:layout_width="147dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="24dp"
+        android:onClick="clickBack"
+        android:text="Предыдущее"
+        app:layout_constraintStart_toStartOf="@+id/buttonDislike"
+        app:layout_constraintTop_toBottomOf="@+id/buttonDislike" />
+
+    <ImageButton
+        android:id="@+id/buttonDownload"
+        android:layout_width="54dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="168dp"
+        android:background="#FFFFFF"
+        android:onClick="clickDownload"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonLike"
+        app:srcCompat="@drawable/free_icon_downloading_file_69656" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="163dp"
+        android:layout_height="24dp"
+        android:text="Тупик"
+        android:textSize="20dp"
+        tools:layout_editor_absoluteX="175dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
