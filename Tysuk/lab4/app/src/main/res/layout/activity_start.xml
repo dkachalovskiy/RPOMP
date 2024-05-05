@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="30dp">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Разработчик Тусюк Т.В."
+        android:textSize="20dp"
+        android:textColor="@color/black" />
+    <Space
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_weight="1"/>
+
+    <EditText
+        android:id="@+id/dataSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="center"
+        android:hint=" "
+        android:textSize="20dp" />
+
+
+    <Button
+        android:id="@+id/uploadDataButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/black"
+        android:text="Загрузить данные" />
+
+    <Button
+        android:id="@+id/exit"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/black"
+        android:text="Выйти из приложения" />
+    <Space
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_weight="1"/>
+</LinearLayout>
