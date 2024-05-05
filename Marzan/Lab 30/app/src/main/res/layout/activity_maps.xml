@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapsActivity">
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MapsActivity"
+        tools:layout_editor_absoluteX="-206dp"
+        tools:layout_editor_absoluteY="-160dp" />
+
+    <android.widget.SearchView
+        android:id="@+id/mapSearch"
+        android:layout_width="324dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginRight="7dp"
+        android:elevation="5dp"
+        android:iconifiedByDefault="false"
+        android:background="@drawable/bg_search"
+        android:queryHint="Search(For Kuharev)..."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.widget.Button
+        android:id="@+id/btnMyLoc"
+        android:layout_width="20pt"
+        android:layout_height="20pt"
+        android:layout_marginTop="2pt"
+        android:onClick="onClickMyLoc"
+        android:background="@drawable/curr_loc"
+        app:layout_constraintTop_toBottomOf="@+id/mapSearch"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="4pt" />
+
+    <android.widget.Button
+        android:id="@+id/menu_button"
+        android:layout_width="20pt"
+        android:layout_height="20pt"
+        android:layout_marginTop="23pt"
+        android:layout_marginEnd="4pt"
+        android:background="@drawable/map_layers"
+        android:onClick="showPopupMenu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mapSearch" />
+
+    <android.widget.Button
+        android:id="@+id/route_button"
+        android:layout_width="52dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="640dp"
+        android:layout_marginEnd="340dp"
+        android:onClick="showPopupMenu"
+        android:background="@drawable/direction"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mapSearch" />
+
+    <LinearLayout
+        android:id="@+id/route_view"
+        android:layout_width="320dp"
+        android:layout_height="205dp"
+        android:layout_marginTop="-265dp"
+        android:layout_marginLeft="-60dp"
+        android:orientation="vertical"
+        android:background="@drawable/bg_search"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.379"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/route_button">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/mapSearch"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <android.widget.Button
+                android:id="@+id/vehicle"
+                android:background="@drawable/drive"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/mapSearch" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="251dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="5dp"
+                android:text="Kuharev Dmitry PO-9"
+                android:gravity="center_vertical"
+                android:textSize="20sp"
+                tools:layout_editor_absoluteX="95dp"
+                tools:layout_editor_absoluteY="237dp" />
+
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/mapSearch"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+        <android.widget.SearchView
+            android:id="@+id/mapSearch2"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/bg_search"
+            android:elevation="5dp"
+            android:iconifiedByDefault="false"
+            android:queryHint="Dmitry location" />
+        <android.widget.Button
+            android:id="@+id/choose1"
+            android:background="@drawable/choose_marker"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="-45dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mapSearch" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/mapSearch"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+        <android.widget.SearchView
+            android:id="@+id/mapSearch3"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/bg_search"
+            android:elevation="5dp"
+            android:iconifiedByDefault="false"
+            android:queryHint="Kuharev destination" />
+        <android.widget.Button
+            android:id="@+id/choose2"
+            android:background="@drawable/choose_marker"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="-45dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mapSearch" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/mapSearch"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <android.widget.Button
+            android:id="@+id/build_route"
+            android:backgroundTint="#000FFF"
+            android:textColor="#FFFFFF"
+            android:layout_width="125dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginStart="15dp"
+            android:onClick="showPopupMenu"
+            android:text="Direction"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mapSearch" />
+        <android.widget.Button
+            android:id="@+id/clear_route"
+            android:layout_width="125dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginStart="10dp"
+            android:onClick="showPopupMenu"
+            android:text="Clear"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mapSearch" />
+        <android.widget.Button
+            android:id="@+id/getCurLoc"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5pt"
+            android:layout_marginBottom="19dp"
+            android:onClick="onClickMyLoc"
+            android:background="@drawable/curr_loc"
+            android:layout_marginEnd="2pt" />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

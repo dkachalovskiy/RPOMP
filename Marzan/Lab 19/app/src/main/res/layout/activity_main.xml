@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello Dmitry Kuharev!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:textSize="5pt"
+            android:id="@+id/btnSensList"
+            android:layout_width="48pt"
+            android:layout_height="wrap_content"
+            android:onClick="onClickSensList"
+            android:text="@string/list"></Button>
+        <Button
+            android:textSize="5pt"
+            android:id="@+id/btnSensLight"
+            android:layout_width="48pt"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/btnSensList"
+            android:onClick="onClickSensLight"
+            android:text="@string/light">
+        </Button>
+        <Button
+            android:textSize="5pt"
+            android:id="@+id/btnSensAccelerator"
+            android:layout_width="55pt"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/btnSensLight"
+            android:onClick="onClickSensAccelerometer"
+            android:text="@string/accelerator">
+        </Button>
+        <Button
+            android:textSize="5pt"
+            android:id="@+id/btnSensOrientation"
+            android:layout_width="50pt"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/btnSensAccelerator"
+            android:onClick="onClickSensOrientation"
+            android:text="@string/orientation">
+        </Button>
+        <ScrollView
+            android:id="@+id/scroll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnSensList">
+            <TextView
+                android:id="@+id/tvText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </TextView>
+        </ScrollView>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

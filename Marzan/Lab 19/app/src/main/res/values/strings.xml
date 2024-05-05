@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Kuharev L19</string>
+    <string name="list">List
+        Kukharev</string>
+    <string name="light">Light Kukharev</string>
+    <string name="accelerator">Acceleration Kukharev</string>
+    <string name="orientation">Position Kukharev</string>
+</resources>

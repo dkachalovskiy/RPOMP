@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapsActivity">
+
+<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/map"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapsActivity" />
+
+    <android.widget.SearchView
+        android:id="@+id/mapSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginTop="5dp"
+        android:elevation="5dp"
+        android:iconifiedByDefault="false"
+        android:background="@drawable/bg_search"
+        android:queryHint="Search..."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.widget.Button
+        android:id="@+id/btnMyLoc"
+        android:layout_width="20pt"
+        android:layout_height="20pt"
+        android:layout_marginTop="2pt"
+        android:onClick="onClickMyLoc"
+        android:background="@drawable/curr_loc"
+        app:layout_constraintTop_toBottomOf="@+id/mapSearch"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="4pt" />
+
+    <android.widget.Button
+        android:id="@+id/menu_button"
+        android:layout_width="20pt"
+        android:layout_height="20pt"
+        android:layout_marginTop="23pt"
+        android:layout_marginEnd="4pt"
+        android:background="@drawable/map_layers"
+        android:onClick="showPopupMenu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mapSearch" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
