@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:focusableInTouchMode="false"
+        android:focusable="false"
+        android:gravity="center"
+        android:text="Калькулятор (Бердникова)"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="480dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:ems="10"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:gravity="end|bottom"
+        android:inputType="text"
+        android:text="0"
+        android:textSize="60sp" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/light_pink">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/buttonAC"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_marginEnd="1sp"
+                android:layout_weight="1"
+                android:width="30sp"
+                android:height="30sp"
+                android:backgroundTint="@color/dark_purple"
+                android:onClick="doAC"
+                android:text="AC"
+                android:textColor="@color/black"
+                android:textSize="8pt" />
+
+            <Button
+                android:id="@+id/buttonSign"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_marginEnd="1sp"
+                android:layout_weight="1"
+                android:width="30sp"
+                android:height="30sp"
+                android:backgroundTint="@color/magenta"
+                android:onClick="clickNum"
+                android:text="+/-"
+                android:textColor="@color/black"
+                android:textSize="8pt" />
+
+            <Button
+                android:id="@+id/buttonDiv"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_marginEnd="1sp"
+                android:layout_weight="1"
+                android:width="30sp"
+                android:height="30sp"
+                android:backgroundTint="@color/magenta"
+                android:onClick="DoOperation"
+                android:text="/"
+                android:textColor="@color/black"
+                android:textSize="8pt" />
+
+            <Button
+                android:id="@+id/buttonMult"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_marginEnd="1sp"
+                android:layout_weight="1"
+                android:width="30sp"
+                android:height="30sp"
+                android:backgroundTint="@color/magenta"
+                android:onClick="DoOperation"
+                android:text="*"
+                android:textColor="@color/black"
+                android:textSize="8pt" />
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/button7"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_marginEnd="1sp"
+                android:layout_weight="1"
+                android:width="30sp"
+                android:height="30sp"
+                android:backgroundTint="@color/pink"
+                android:onClick="clickNum"
+                android:text="7"
+                android:textColor="@color/black"
+                android:textSize="8pt" />
+
+            <Button
+                android:id="@+id/button8"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_marginEnd="1sp"
+                android:layout_weight="1"
+                android:width="30sp"
+                android:height="30sp"
+                android:backgroundTint="@color/pink"
+                android:onClick="clickNum"
+                android:text="8"
+                android:textColor="@color/black"
+                android:textSize="8pt" />
+
+            <Button
+                android:id="@+id/button9"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_marginEnd="1sp"
+                android:layout_weight="1"
+                android:width="30sp"
+                android:height="30sp"
+                android:backgroundTint="@color/pink"
+                android:onClick="clickNum"
+                android:text="9"
+                android:textColor="@color/black"
+                android:textSize="8pt" />
+
+            <Button
+                android:id="@+id/buttonPerc"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_marginEnd="1sp"
+                android:layout_weight="1"
+                android:width="30sp"
+                android:height="30sp"
+                android:backgroundTint="@color/magenta"
+                android:onClick="doPercent"
+                android:text="%"
+                android:textColor="@color/black"
+                android:textSize="8pt" />
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/button4"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_marginEnd="1sp"
+                android:layout_weight="1"
+                android:width="30sp"
+                android:height="30sp"
+                android:backgroundTint="@color/pink"
+                android:onClick="clickNum"
+                android:text="4"
+                android:textColor="@color/black"
+                android:textSize="8pt" />
+
+            <Button
+                android:id="@+id/button5"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_marginEnd="1sp"
+                android:layout_weight="1"
+                android:width="30sp"
+                android:height="30sp"
+                android:backgroundTint="@color/pink"
+                android:onClick="clickNum"
+                android:text="5"
+                android:textColor="@color/black"
+                android:textSize="8pt" />
+
+            <Button
+                android:id="@+id/button6"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_marginEnd="1sp"
+                android:layout_weight="1"
+                android:width="30sp"
+                android:height="30sp"
+                android:backgroundTint="@color/pink"
+                android:onClick="clickNum"
+                android:text="6"
+                android:textColor="@color/black"
+                android:textSize="8pt" />
+
+            <Button
+                android:id="@+id/buttonAdd"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_marginEnd="1sp"
+                android:layout_weight="1"
+                android:width="30sp"
+                android:height="30sp"
+                android:backgroundTint="@color/magenta"
+                android:onClick="DoOperation"
+                android:text="+"
+                android:textColor="@color/black"
+                android:textSize="8pt" />
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/button1"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_marginEnd="1sp"
+                android:layout_weight="1"
+                android:width="30sp"
+                android:height="30sp"
+                android:backgroundTint="@color/pink"
+                android:onClick="clickNum"
+                android:text="1"
+                android:textColor="@color/black"
+                android:textSize="8pt" />
+
+            <Button
+                android:id="@+id/button2"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_marginEnd="1sp"
+                android:layout_weight="1"
+                android:width="30sp"
+                android:height="30sp"
+                android:backgroundTint="@color/pink"
+                android:onClick="clickNum"
+                android:text="2"
+                android:textColor="@color/black"
+                android:textSize="8pt" />
+
+            <Button
+                android:id="@+id/button3"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_marginEnd="1sp"
+                android:layout_weight="1"
+                android:width="30sp"
+                android:height="30sp"
+                android:backgroundTint="@color/pink"
+                android:onClick="clickNum"
+                android:text="3"
+                android:textColor="@color/black"
+                android:textSize="8pt" />
+
+            <Button
+                android:id="@+id/buttonSub"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_marginEnd="1sp"
+                android:layout_weight="1"
+                android:width="30sp"
+                android:height="30sp"
+                android:backgroundTint="@color/magenta"
+                android:onClick="DoOperation"
+                android:text="-"
+                android:textColor="@color/black"
+                android:textSize="8pt" />
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="166dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/button0"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_marginEnd="1sp"
+                android:layout_weight="2"
+                android:width="30sp"
+                android:height="30sp"
+                android:backgroundTint="@color/pink"
+                android:onClick="clickNum"
+                android:text="0"
+                android:textColor="@color/black"
+                android:textSize="8pt" />
+
+            <Button
+                android:id="@+id/buttonPoint"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_marginEnd="1sp"
+                android:layout_weight="2"
+                android:width="30sp"
+                android:height="30sp"
+                android:backgroundTint="@color/pink"
+                android:onClick="clickNum"
+                android:text="."
+                android:textColor="@color/black"
+                android:textSize="8pt" />
+
+            <Button
+                android:id="@+id/buttonEqual"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="30dp"
+                android:layout_marginEnd="1sp"
+                android:layout_weight="9"
+                android:width="30sp"
+                android:height="30sp"
+                android:backgroundTint="@color/dark_purple"
+                android:onClick="ClickResult"
+                android:text="(Бердникова) ="
+                android:textColor="@color/black"
+                android:textSize="8pt" />
+
+        </TableRow>
+
+    </TableLayout>
+
+
+</LinearLayout>
