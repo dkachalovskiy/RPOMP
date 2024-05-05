@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:text="Разработчик Тусюк Т.В." />
+    <ListView
+        android:id="@+id/lv"
+        android:layout_width="400dp"
+        android:layout_height="525dp" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="90dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="175dp"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/black"
+            android:text="Сохранить" />
+        <Space
+            android:layout_height="0dp"
+            android:layout_width="100dp"
+            android:layout_weight="1000"/>
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="175dp"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/black"
+            android:text="Назад" />
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>
