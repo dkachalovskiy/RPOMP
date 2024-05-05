@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editMessageForSearch"
+        android:layout_width="206dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="56dp"
+        android:ems="10"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:text=""
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/authorButton"
+        android:layout_width="140dp"
+        android:layout_height="58dp"
+        android:text="Нажимает Зеленков"
+        tools:ignore="MissingConstraints" />
+
+
+    <TextView
+        android:id="@+id/overlayTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:paddingLeft="145dp"
+        android:text="Зеленков К. И."
+        android:textColor="#000000"
+        android:textSize="18sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="4dp" />
+
+    <ImageView
+        android:id="@+id/authorImageView"
+        android:layout_width="387dp"
+        android:layout_height="19dp"
+        android:contentDescription="Разработал Зеленков"
+        android:paddingLeft="740px"
+        android:src="@drawable/myimage"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="7dp" />
+
+    <Button
+        android:id="@+id/butSearch"
+        android:layout_width="139dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="48dp"
+        android:background="@color/black"
+        android:onClick="GetSearchText"
+        android:text="Поиск"
+        app:layout_constraintStart_toEndOf="@+id/editMessageForSearch"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewDefaultDog"
+        android:layout_width="324dp"
+        android:layout_height="436dp"
+        android:layout_marginTop="188dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.574"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <Button
+        android:id="@+id/buttonNext"
+        android:layout_width="138dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="48dp"
+        android:onClick="clickNext"
+        android:text="Следующее"
+        android:background="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/butSearch" />
+
+    <Button
+        android:id="@+id/buttonBack"
+        android:layout_width="138dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:onClick="clickBack"
+        android:text="Предыдущее"
+        android:background="@color/black"
+        app:layout_constraintEnd_toStartOf="@+id/buttonNext"
+        app:layout_constraintHorizontal_bias="0.412"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/butSearch" />
+
+    <Button
+        android:id="@+id/buttonLike"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="18dp"
+        android:backgroundTint="@color/green"
+        android:onClick="clickLike"
+        android:text="Нравится"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewDefaultDog" />
+
+    <ImageButton
+        android:id="@+id/buttonDownload"
+        android:layout_width="54dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="#FFFFFF"
+        android:onClick="clickDownload"
+        android:scaleType="centerInside"
+        app:layout_constraintEnd_toStartOf="@+id/buttonDislike"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewDefaultDog"
+        app:srcCompat="@drawable/download" />
+
+    <ImageButton
+        android:id="@+id/buttonInternet"
+        android:layout_width="54dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:background="#FFFFFF"
+        android:onClick="clickInternet"
+        android:scaleType="centerInside"
+        app:layout_constraintEnd_toStartOf="@+id/buttonDownload"
+        app:layout_constraintHorizontal_bias="0.892"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewDefaultDog"
+        app:srcCompat="@drawable/images" />
+
+    <Button
+        android:id="@+id/buttonDislike"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="@color/red"
+        android:onClick="clickDisLike"
+        android:text="Не нравится"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toStartOf="@+id/buttonLike"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewDefaultDog" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
