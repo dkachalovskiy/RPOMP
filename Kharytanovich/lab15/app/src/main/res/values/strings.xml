@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">lab15</string>
+    <string name="student_fio">Харитонович Захар Сергеевич ПО-9</string>
+    <string name="errorText">Ошибка во время выполнения операции</string>
+    <string name="title">Заголовок</string>
+    <string name="textValue">Основной текст</string>
+    <string name="receiveDateTime">Дата время</string>
+</resources>
