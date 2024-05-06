@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:focusableInTouchMode="false"
+        android:focusable="false"
+        android:gravity="center"
+        android:text="Калькулятор Матюшик"
+        android:textSize="10pt"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/lightBlue"
+        android:ems="10"
+        android:gravity="right|center"
+        android:inputType="text"
+        android:text="0"
+        android:textSize="40pt" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- кнопки стереть, плюс/минус, процент, деление -->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <Button
+                android:id="@+id/buttAC"
+                android:text="AC"
+                android:onClick="ACCleanUp"
+                android:height="30pt"
+                android:width="30pt"
+                android:textSize="8pt"
+                android:layout_weight="1"
+                android:layout_marginRight="2pt"
+                android:backgroundTint="@color/blue" />
+
+            <Button
+                android:id="@+id/buttPlusMinus"
+                android:onClick="clickNumber"
+                android:text="+/-"
+                android:height="30pt"
+                android:width="30pt"
+                android:textSize="8pt"
+                android:layout_weight="1"
+                android:layout_marginRight="2pt"
+                android:backgroundTint="@color/blue" />
+
+            <Button
+                android:id="@+id/buttPercent"
+                android:onClick="PercentMethod"
+                android:text="%"
+                android:height="30pt"
+                android:width="30pt"
+                android:textSize="8pt"
+                android:layout_weight="1"
+                android:layout_marginRight="2pt"
+                android:backgroundTint="@color/blue" />
+
+            <Button
+                android:id="@+id/buttDivide"
+                android:onClick="operation"
+                android:text="÷"
+                android:height="30pt"
+                android:width="30pt"
+                android:textSize="8pt"
+                android:layout_weight="1"
+                android:layout_marginRight="2pt"
+                android:backgroundTint="@color/blue" />
+            </TableRow>
+
+        <!-- кнопки 7, 8, 9, умножить -->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/buttSeven"
+                android:onClick="clickNumber"
+                android:text="7"
+                android:height="30pt"
+                android:width="30pt"
+                android:textSize="8pt"
+                android:layout_weight="1"
+                android:layout_marginRight="2pt"
+                android:backgroundTint="@color/middleBlue" />
+
+            <Button
+                android:id="@+id/buttEight"
+                android:onClick="clickNumber"
+                android:text="8"
+                android:height="30pt"
+                android:width="30pt"
+                android:textSize="8pt"
+                android:layout_weight="1"
+                android:layout_marginRight="2pt"
+                android:backgroundTint="@color/middleBlue" />
+
+            <Button
+                android:id="@+id/buttNine"
+                android:onClick="clickNumber"
+                android:text="9"
+                android:height="30pt"
+                android:width="30pt"
+                android:textSize="8pt"
+                android:layout_weight="1"
+                android:layout_marginRight="2pt"
+                android:backgroundTint="@color/middleBlue" />
+
+            <Button
+                android:id="@+id/buttMultiply"
+                android:onClick="operation"
+                android:text="x"
+                android:height="30pt"
+                android:width="30pt"
+                android:textSize="8pt"
+                android:layout_weight="1"
+                android:layout_marginRight="2pt"
+                android:backgroundTint="@color/blue" />
+        </TableRow>
+
+        <!-- кнопки 4, 5, 6, минус -->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/buttFour"
+                android:onClick="clickNumber"
+                android:text="4"
+                android:height="30pt"
+                android:width="30pt"
+                android:textSize="8pt"
+                android:layout_weight="1"
+                android:layout_marginRight="2pt"
+                android:backgroundTint="@color/middleBlue" />
+
+            <Button
+                android:id="@+id/buttFive"
+                android:onClick="clickNumber"
+                android:text="5"
+                android:height="30pt"
+                android:width="30pt"
+                android:textSize="8pt"
+                android:layout_weight="1"
+                android:layout_marginRight="2pt"
+                android:backgroundTint="@color/middleBlue" />
+
+            <Button
+                android:id="@+id/buttSix"
+                android:onClick="clickNumber"
+                android:text="6"
+                android:height="30pt"
+                android:width="30pt"
+                android:textSize="8pt"
+                android:layout_weight="1"
+                android:layout_marginRight="2pt"
+                android:backgroundTint="@color/middleBlue" />
+
+            <Button
+                android:id="@+id/buttMinus"
+                android:onClick="operation"
+                android:text="-"
+                android:height="30pt"
+                android:width="30pt"
+                android:textSize="8pt"
+                android:layout_weight="1"
+                android:layout_marginRight="2pt"
+                android:backgroundTint="@color/blue" />
+        </TableRow>
+
+        <!-- кнопки 1, 2, 3, плюс -->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/buttOne"
+                android:onClick="clickNumber"
+                android:text="1"
+                android:height="30pt"
+                android:width="30pt"
+                android:textSize="8pt"
+                android:layout_weight="1"
+                android:layout_marginRight="2pt"
+                android:backgroundTint="@color/middleBlue" />
+
+            <Button
+                android:id="@+id/buttTwo"
+                android:onClick="clickNumber"
+                android:text="2"
+                android:height="30pt"
+                android:width="30pt"
+                android:textSize="8pt"
+                android:layout_weight="1"
+                android:layout_marginRight="2pt"
+                android:backgroundTint="@color/middleBlue" />
+
+            <Button
+                android:id="@+id/buttThree"
+                android:onClick="clickNumber"
+                android:text="3"
+                android:height="30pt"
+                android:width="30pt"
+                android:textSize="8pt"
+                android:layout_weight="1"
+                android:layout_marginRight="2pt"
+                android:backgroundTint="@color/middleBlue" />
+
+            <Button
+                android:id="@+id/buttPlus"
+                android:onClick="operation"
+                android:text="+"
+                android:height="30pt"
+                android:width="30pt"
+                android:textSize="8pt"
+                android:layout_weight="1"
+                android:layout_marginRight="2pt"
+                android:backgroundTint="@color/blue" />
+        </TableRow>
+
+        <!-- кнопки 0, точка, равно -->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/buttZero"
+                android:onClick="clickNumber"
+                android:text="0(Матюшик)"
+                android:height="30pt"
+                android:width="30pt"
+                android:textSize="8pt"
+                android:layout_weight="3"
+                android:layout_marginRight="2pt"
+                android:backgroundTint="@color/middleBlue" />
+
+            <Button
+                android:id="@+id/buttPoint"
+                android:onClick="clickNumber"
+                android:text="."
+                android:height="30pt"
+                android:width="30pt"
+                android:textSize="8pt"
+                android:layout_weight="1"
+                android:layout_marginRight="2pt"
+                android:backgroundTint="@color/middleBlue" />
+
+            <Button
+                android:id="@+id/buttEqual"
+                android:onClick="clickResult"
+                android:text="="
+                android:height="30pt"
+                android:width="30pt"
+                android:textSize="8pt"
+                android:layout_weight="1"
+                android:layout_marginRight="2pt"
+                android:backgroundTint="@color/blue" />
+        </TableRow>
+
+    </TableLayout>
+</LinearLayout>

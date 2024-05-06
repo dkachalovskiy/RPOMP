@@ -1,0 +1,52 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    android:background="@color/white_pink"
+    android:orientation="vertical"
+    android:paddingTop="16dp"
+    android:paddingEnd="16dp"
+    android:paddingStart="16dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="127dp"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Download file and open it to see (Matyushik)"
+            android:textColor="@color/black"/>
+
+        <CheckBox
+            android:id="@+id/checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Dont show again"/>
+
+        <Button
+            android:id="@+id/button_ok"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:text="ОК"
+
+            android:backgroundTint="@color/blue"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="0dp"
+
+            app:strokeColor="#000000"
+            app:strokeWidth="2dp"
+            app:cornerRadius="10dp"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
