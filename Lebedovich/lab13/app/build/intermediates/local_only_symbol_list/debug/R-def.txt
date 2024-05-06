@@ -1,0 +1,35 @@
+R_DEF: Internal format may change without notice
+local
+color black
+color purple
+color white
+drawable del
+drawable download
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+drawable img
+drawable img_1
+drawable poput_background
+id butDelete
+id butDownload
+id butSee
+id button_ok
+id checkbox
+id editID
+layout activity_main
+layout popup_layout
+mipmap ic_launcher
+mipmap ic_launcher_foreground
+mipmap ic_launcher_round
+string app_name
+string butDeleteText
+string butDownloadText
+string butPoput
+string butSeeText
+string editIDforDownload
+string nameText
+style Base.Theme.FileDown
+style Theme.FileDown
+xml backup_rules
+xml data_extraction_rules
+xml file_paths

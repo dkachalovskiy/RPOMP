@@ -1,0 +1,5 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+       android:shape="rectangle">
+    <solid android:color="#70000000" /> <!-- Используйте значение серого цвета в формате ARGB -->
+    <corners android:radius="5dp" />
+</shape>

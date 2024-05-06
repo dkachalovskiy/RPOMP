@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="grey">#322F2F</color>
+    <color name="ic_launcher_background">#5A3DDC</color>
+    <color name="lightGrey">#9E9993</color>
+    <color name="orange">#FF9800</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="app_name">Лебедович №2</string>
+    <style name="Base.Theme.MyCalculator" parent="Theme.Material3.DayNight.NoActionBar">
+        
+        
+    </style>
+    <style name="Theme.MyCalculator" parent="Base.Theme.MyCalculator"/>
+</resources>

@@ -1,0 +1,30 @@
+R_DEF: Internal format may change without notice
+local
+color black
+color white
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+id btnShow
+id cb_good
+id lin_layout
+id listTitle
+id listview
+id listview_selected_goods
+id tv_count
+id tv_goodCost
+id tv_goodId
+id tv_goodName
+layout activity_main
+layout footer_mygoods
+layout header_mygoods
+layout item_good
+layout my_view
+layout second_activity
+mipmap ic_launcher
+mipmap ic_launcher_foreground
+mipmap ic_launcher_round
+string app_name
+style Base.Theme.Lab_4
+style Theme.Lab_4
+xml backup_rules
+xml data_extraction_rules

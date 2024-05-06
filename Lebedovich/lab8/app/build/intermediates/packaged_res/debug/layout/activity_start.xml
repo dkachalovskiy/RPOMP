@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="30dp">
+
+    <EditText
+        android:id="@+id/dataSize"
+        android:layout_width="match_parent"
+        android:layout_height="278dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Input data size"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/uploadDataButton"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/yellow"
+        android:text="Upload Data" />
+
+
+    <Button
+        android:id="@+id/exit"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/yellow"
+        android:text="Exit" />
+</LinearLayout>
