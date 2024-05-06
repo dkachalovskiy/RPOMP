@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MobilesLab1</string>
+    <string name="list">List Kot A. A.</string>
+    <string name="light">Light</string>
+    <string name="acceleration">Acceleration</string>
+    <string name="orientation">Orientation</string>
+</resources>

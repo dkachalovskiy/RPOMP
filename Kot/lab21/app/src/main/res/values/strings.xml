@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MobilesLab2</string>
+    <string name="acceleration">Acceleration (Kot A. labwork)</string>
+    <string name="gps">GPS</string>
+    <string name="latitude">Latitude:</string>
+    <string name="longitude">Longitude:</string>
+    <string name="other_sensors">Other Sensors</string>
+    <string name="kot_a">Kot A.</string>
+</resources>
