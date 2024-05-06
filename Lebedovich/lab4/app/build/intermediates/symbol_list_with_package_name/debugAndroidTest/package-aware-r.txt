@@ -1,0 +1,3 @@
+com.example.ratingimages.test
+style WhiteBackgroundDialogTheme
+style WhiteBackgroundTheme

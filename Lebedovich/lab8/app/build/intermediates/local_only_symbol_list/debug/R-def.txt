@@ -1,0 +1,35 @@
+R_DEF: Internal format may change without notice
+local
+color black
+color green
+color purple_200
+color purple_500
+color purple_700
+color red
+color teal_200
+color teal_700
+color white
+color yellow
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+id back
+id bodytxt
+id dataSize
+id exit
+id idtxt
+id lv
+id save
+id titletxt
+id update
+id uploadDataButton
+layout activity_detail
+layout activity_main
+layout activity_start
+layout singleview
+mipmap ic_launcher
+mipmap ic_launcher_foreground
+mipmap ic_launcher_round
+string app_name
+style Theme.RPO_lab2
+xml backup_rules
+xml data_extraction_rules

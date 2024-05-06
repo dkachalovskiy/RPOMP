@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="blackwhite">#C1C1C1</color>
+    <color name="green">#56EA17</color>
+    <color name="red">#800B0B</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="yellow">#FF9800</color>
+    <string name="ButtonBack">Предыдущая</string>
+    <string name="ButtonNext">Следующая</string>
+    <string name="ButtonSearch">Поиск</string>
+    <string name="app_name">LebedovichLab4</string>
+    <string name="editMessageForSearch">Введите для поиска...</string>
+    <style name="Base.Theme.RatingImages" parent="Theme.Material3.DayNight.NoActionBar">
+        
+        
+    </style>
+    <style name="Theme.RatingImages" parent="Base.Theme.RatingImages"/>
+</resources>
