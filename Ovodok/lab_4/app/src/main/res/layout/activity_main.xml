@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/relative1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp">
+
+
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/searchButton"
+                android:onClick="onClickSearchButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Поиск" />
+
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_marginTop="70dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/defolt"
+                >
+
+            </ImageView>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="200dp"
+                android:orientation="vertical"
+                android:layout_gravity="end">
+
+                <ImageButton
+                    android:background="#00000000"
+                    android:onClick="onClickLikeButton"
+                    android:id="@+id/imageButtonLike"
+                    android:layout_gravity="end"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/heart"
+                    android:scaleType="centerCrop"/>
+
+
+                <ImageButton
+                    android:background="#00000000"
+                    android:onClick="onClickDislikeButton"
+                    android:id="@+id/imageButtonDislike"
+                    android:layout_gravity="end"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/poop"
+                    android:scaleType="centerCrop"/>
+
+                <ImageButton
+                    android:background="#00000000"
+                    android:onClick="onClickLinkButton"
+                    android:id="@+id/imageButtonLink"
+                    android:layout_gravity="end"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/internet"
+                    android:scaleType="centerCrop"/>
+                <ImageButton
+                    android:background="#00000000"
+                    android:onClick="onClickDownloadButton"
+                    android:id="@+id/imageButtonDownload"
+                    android:layout_gravity="end"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/download"
+                    android:scaleType="centerCrop"
+                    />
+            </LinearLayout>
+        </FrameLayout>
+
+
+    </RelativeLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
