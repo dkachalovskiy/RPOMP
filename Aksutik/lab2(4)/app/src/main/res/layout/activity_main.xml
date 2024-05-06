@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editMessageForSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="64dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Enter "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/butSearch"
+        android:onClick="GetSearchText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="60dp"
+        android:backgroundTint="#00C3C3"
+        android:text="Search"
+        app:layout_constraintStart_toEndOf="@+id/editMessageForSearch"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewDefaultDog"
+        android:layout_width="324dp"
+        android:layout_height="436dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editMessageForSearch"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <Button
+        android:id="@+id/buttonDislike"
+        android:onClick="clickDisLike"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="216dp"
+        android:text="👎"
+        android:backgroundTint="#00C3C3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonInternet"
+        app:layout_constraintHorizontal_bias="0.862"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonLike"
+        android:onClick="clickLike"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="216dp"
+        android:backgroundTint="#00C3C3"
+        android:text="👍"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageButton
+        android:id="@+id/buttonInternet"
+        android:onClick="clickInternet"
+        android:layout_width="54dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="216dp"
+        android:background="#FFFFFF"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonDownload"
+        app:srcCompat="@drawable/free_icon_internet_1450332" />
+
+    <ImageButton
+        android:id="@+id/buttonDownload"
+        android:onClick="clickDownload"
+        android:layout_width="54dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="216dp"
+        android:background="#FFFFFF"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonLike"
+        app:srcCompat="@drawable/free_icon_downloading_file_69656" />
+
+    <Button
+        android:id="@+id/buttonBack"
+        android:onClick="clickBack"
+        android:layout_width="147dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#00C3C3"
+        android:text="Предыдущее"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonDislike" />
+
+    <Button
+        android:id="@+id/buttonNext"
+        android:onClick="clickNext"
+        android:layout_width="136dp"
+        android:layout_height="40dp"
+        android:backgroundTint="#00C3C3"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="40dp"
+        android:text="Следующее"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonLike" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
